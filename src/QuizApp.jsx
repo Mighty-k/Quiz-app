@@ -58,10 +58,11 @@ const QuizApp = () => {
       ) : (
         <div className="quest container">
           <h1>{currentQuest.question}</h1>
+            <hr/>
          <ul>
         {shuffle(currentQuest.options).map((optn) => (
           <li key={optn}>
-              <button className='options btn btn-success g-1' 
+              <button className='options d-grid gap-2 d-md-block btn btn-success' 
               onClick={() => handleAnswer(optn)}>
                 {optn}
                 </button>
