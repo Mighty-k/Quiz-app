@@ -1,0 +1,63 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "options": ["Paris", "London", "Berlin", "Madrid"],
+    "answer": "Paris"
+  },
+  {
+    "question": "What is the largest continent in the world?",
+    "options": ["Africa", "Asia", "North America", "South America"],
+    "answer": "Asia"
+  },
+  {
+    "question": "What is the currency of Japan?",
+    "options": ["Yen", "Dollar", "Euro", "Pound"],
+    "answer": "Yen"
+  },
+  {
+    "question": "What is the scientific name for Humans?",
+    "options": ["Homoglobins", "Monkopians", "Babopians", "Homosapians"],
+    "answer": "Homosapians"
+  },{
+    "question": "What species of animals are Crocodiles?",
+    "options": ["Mammals", "Reptiles", "Birds", "Fish"],
+    "answer": "Reptiles"
+  },{
+    "question": "What is the currency of the United Kingdom?",
+    "options": ["Yen", "Dollar", "Euro", "Pound"],
+    "answer": "Pound"
+  },{
+    "question": "What is used to declare a variable in JavaScript?",
+    "options": ["const", "let", "int", "string"],
+    "answer": "let"
+  },{
+    "question": "What is used to indicate the end of a sentence in JavaScript?",
+    "options": [":", ".", ";", ","],
+    "answer": ";"
+  },{
+    "question": "How do you create a string in Java Script?",
+    "options": ["int s = string", "string s = 'string'", "var s = string", "let s = 'string'"],
+    "answer": "let s = 'string'"
+  },{
+    "question": "Coal's chemical structure is similar to which of the following?",
+    "options": ["Diamond", "Silver", "Gold", "Copper"],
+    "answer": "Diamond"
+  },{
+    "question": "Which of this scientists did not compose a law in chemistry?",
+    "options": ["Avogadro", "Charles", "Darwin", "Boyle"],
+    "answer": "Darwin"
+  },{
+    "question": "Which of this is not an OS?",
+    "options": ["Dell", "Windows", "Android", "Mac"],
+    "answer": "Dell"
+  },{
+    "question": "Which of this is a strong acid?",
+    "options": ["H2O", "NaCl", "K2O", "HCL"],
+    "answer": "HCL"
+  },{
+    "question": "What law states 'The greater the mass the greater the force of attraction' ?",
+    "options": ["Newton's law of motion", "Law of gravitation", "Darwin's law of evolution", "Avogadro's molecular law"],
+    "answer": "Law of gravitation"
+  }
+
+]
