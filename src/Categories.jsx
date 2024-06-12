@@ -18,8 +18,8 @@
                         onClick={handleToggle}
                         >
                             <motion.h3
-                            initial={{fontSize:22,y:1}}
-                            animate={{ fontSize: expanded ? 18 : 24, y: expanded ? -20 : 0 }}
+                            initial={{fontSize:22,y:0}}
+                            animate={{ fontSize: expanded ? 18 : 24, y: expanded ? -10 : 0 }}
                             transition={{duration:0.1}}
                             >{name}</motion.h3>
                         
@@ -27,7 +27,7 @@
                             <motion.div 
                             className="difficulties"
                             initial={{opacity:0}}
-                            animate={{opacity:1, y: expanded ? -20 : 0 }}
+                            animate={{opacity:1, y: expanded ? -10 : 0 }}
                             >
                         {Object.keys(difficulties).map((difficulty, index) => (
                         <p key={index} >
