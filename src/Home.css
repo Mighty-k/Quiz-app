@@ -7,14 +7,16 @@
 
 body {
   background-image: url('/src/img/think.jpeg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  font-weight: 700 !important;
-  font-size: 20px !important;
-  color: #1F1300 !important;
-  transition: all 0.5s !important;
-  cursor: default;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    color: #1F1300 !important;
+    transition: all 0.5s !important;
+    cursor: default;
+    overflow-x: hidden; /* Prevent horizontal scroll */ 
 }
 
 nav {
