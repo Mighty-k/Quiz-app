@@ -1,63 +1,304 @@
 [
   {
-    "question": "What is the capital of France?",
-    "options": ["Paris", "London", "Berlin", "Madrid"],
-    "answer": "Paris"
+    "name": "Biology",
+    "difficulties": {
+      "easy": {
+        "questions": [
+          {
+            "question": "What is the powerhouse of the cell?",
+            "options": ["Nucleus", "Mitochondria", "Ribosome", "Golgi apparatus"],
+            "answer": "Mitochondria"
+          },
+          {
+            "question": "Which organ is responsible for pumping blood?",
+            "options": ["Brain", "Lungs", "Heart", "Liver"],
+            "answer": "Heart"
+          },
+          {
+            "question": "Which organ is responsible for pumping blood?",
+            "options": ["Brain", "Lungs", "Heart", "Liver"],
+            "answer": "Heart"
+          },
+          {
+            "question": "Which organ is responsible for pumping blood?",
+            "options": ["Brain", "Lungs", "Heart", "Liver"],
+            "answer": "Heart"
+          },
+          {
+            "question": "Which organ is responsible for pumping blood?",
+            "options": ["Brain", "Lungs", "Heart", "Liver"],
+            "answer": "Heart"
+          },
+          {
+            "question": "Which organ is responsible for pumping blood?",
+            "options": ["Brain", "Lungs", "Heart", "Liver"],
+            "answer": "Heart"
+          }
+        ]
+      },
+      "medium": {
+        "questions": [
+          {
+            "question": "What process do plants use to make food?",
+            "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+            "answer": "Photosynthesis"
+          },
+          {
+            "question": "What is the primary function of red blood cells?",
+            "options": ["To fight infection", "To carry oxygen", "To clot blood", "To carry nutrients"],
+            "answer": "To carry oxygen"
+          }
+        ]
+      },
+      "hard": {
+        "questions": [
+          {
+            "question": "What type of bond holds the DNA strands together?",
+            "options": ["Ionic bond", "Covalent bond", "Hydrogen bond", "Peptide bond"],
+            "answer": "Hydrogen bond"
+          },
+          {
+            "question": "Which enzyme is responsible for DNA replication?",
+            "options": ["DNA polymerase", "RNA polymerase", "Helicase", "Ligase"],
+            "answer": "DNA polymerase"
+          }
+        ]
+      }
+    }
   },
   {
-    "question": "What is the largest continent in the world?",
-    "options": ["Africa", "Asia", "North America", "South America"],
-    "answer": "Asia"
+    "name": "Math",
+    "difficulties": {
+      "easy": {
+        "questions": [
+          {
+            "question": "What is the value of π (pi) to two decimal places?",
+            "options": ["3.12", "3.14", "3.16", "3.18"],
+            "answer": "3.14"
+          },
+          {
+            "question": "What is 7 + 5?",
+            "options": ["10", "11", "12", "13"],
+            "answer": "12"
+          }
+        ]
+      },
+      "medium": {
+        "questions": [
+          {
+            "question": "What is the square root of 144?",
+            "options": ["10", "11", "12", "13"],
+            "answer": "12"
+          },
+          {
+            "question": "What is the derivative of x²?",
+            "options": ["x", "2x", "x²", "2"],
+            "answer": "2x"
+          }
+        ]
+      },
+      "hard": {
+        "questions": [
+          {
+            "question": "What is the integral of 1/x?",
+            "options": ["ln|x|", "x²", "e^x", "x"],
+            "answer": "ln|x|"
+          },
+          {
+            "question": "What is the limit of (1 + 1/n)^n as n approaches infinity?",
+            "options": ["0", "1", "e", "∞"],
+            "answer": "e"
+          }
+        ]
+      }
+    }
+  },
+   {
+    "name": "Physics",
+    "difficulties": {
+      "easy": {
+        "questions": [
+          {
+            "question": "What is the force that pulls objects toward the Earth?",
+            "answer": "Gravity",
+            "options": ["Magnetism", "Gravity", "Electricity", "Friction"]
+          },
+          {
+            "question": "What is the unit of force in the International System of Units?",
+            "answer": "Newton",
+            "options": ["Joule", "Newton", "Watt", "Pascal"]
+          }
+        ]
+      },
+      "medium": {
+        "questions": [
+          {
+            "question": "What is the speed of light in a vacuum?",
+            "answer": "Approximately 300,000 km/s",
+            "options": ["Approximately 300,000 km/s", "Approximately 150,000 km/s", "Approximately 450,000 km/s", "Approximately 600,000 km/s"]
+          },
+          {
+            "question": "What is the formula for calculating kinetic energy?",
+            "answer": "1/2 mv^2",
+            "options": ["mv", "1/2 mv^2", "mv^2", "1/2 m^2v"]
+          }
+        ]
+      },
+      "hard": {
+        "questions": [
+          {
+            "question": "What is the principle of superposition in quantum mechanics?",
+            "answer": "A particle can exist in multiple states at the same time until it is measured",
+            "options": ["A particle can exist in multiple states at the same time until it is measured", "Particles cannot exist in multiple states", "A particle exists only when measured", "Superposition has no relation to quantum mechanics"]
+          },
+          {
+            "question": "What is the Heisenberg Uncertainty Principle?",
+            "answer": "It is impossible to simultaneously know the exact position and momentum of a particle",
+            "options": ["It is impossible to simultaneously know the exact position and momentum of a particle", "It is possible to know both position and momentum precisely", "Uncertainty principle is related to speed of particles", "Heisenberg Uncertainty Principle is a theory of relativity"]
+          }
+        ]
+      }
+    }
   },
   {
-    "question": "What is the currency of Japan?",
-    "options": ["Yen", "Dollar", "Euro", "Pound"],
-    "answer": "Yen"
+    "name": "Chemistry",
+    "difficulties": {
+      "easy": {
+        "questions": [
+          {
+            "question": "What is the chemical symbol for water?",
+            "answer": "H2O",
+            "options": ["H2O", "O2", "CO2", "HO2"]
+          },
+          {
+            "question": "What is the pH level of pure water?",
+            "answer": "7",
+            "options": ["7", "5", "8", "6"]
+          }
+        ]
+      },
+      "medium": {
+        "questions": [
+          {
+            "question": "What is the molar mass of carbon dioxide (CO2)?",
+            "answer": "44.01 g/mol",
+            "options": ["44.01 g/mol", "28.01 g/mol", "16.00 g/mol", "32.00 g/mol"]
+          },
+          {
+            "question": "What is Avogadro's number?",
+            "answer": "6.022 x 10^23",
+            "options": ["6.022 x 10^23", "6.022 x 10^20", "6.022 x 10^22", "6.022 x 10^24"]
+          }
+        ]
+      },
+      "hard": {
+        "questions": [
+          {
+            "question": "What is the electron configuration of the element Iron (Fe)?",
+            "answer": "[Ar] 3d^6 4s^2",
+            "options": ["[Ar] 3d^6 4s^2", "[Ar] 3d^5 4s^2", "[Ne] 3d^6 4s^2", "[Kr] 3d^6 4s^2"]
+          },
+          {
+            "question": "What is the name of the process by which a solid changes directly into a gas?",
+            "answer": "Sublimation",
+            "options": ["Sublimation", "Evaporation", "Condensation", "Deposition"]
+          }
+        ]
+      }
+    }
   },
   {
-    "question": "What is the scientific name for Humans?",
-    "options": ["Homoglobins", "Monkopians", "Babopians", "Homosapians"],
-    "answer": "Homosapians"
-  },{
-    "question": "What species of animals are Crocodiles?",
-    "options": ["Mammals", "Reptiles", "Birds", "Fish"],
-    "answer": "Reptiles"
-  },{
-    "question": "What is the currency of the United Kingdom?",
-    "options": ["Yen", "Dollar", "Euro", "Pound"],
-    "answer": "Pound"
-  },{
-    "question": "What is used to declare a variable in JavaScript?",
-    "options": ["const", "let", "int", "string"],
-    "answer": "let"
-  },{
-    "question": "What is used to indicate the end of a sentence in JavaScript?",
-    "options": [":", ".", ";", ","],
-    "answer": ";"
-  },{
-    "question": "How do you create a string in Java Script?",
-    "options": ["int s = string", "string s = 'string'", "var s = string", "let s = 'string'"],
-    "answer": "let s = 'string'"
-  },{
-    "question": "Coal's chemical structure is similar to which of the following?",
-    "options": ["Diamond", "Silver", "Gold", "Copper"],
-    "answer": "Diamond"
-  },{
-    "question": "Which of this scientists did not compose a law in chemistry?",
-    "options": ["Avogadro", "Charles", "Darwin", "Boyle"],
-    "answer": "Darwin"
-  },{
-    "question": "Which of this is not an OS?",
-    "options": ["Dell", "Windows", "Android", "Mac"],
-    "answer": "Dell"
-  },{
-    "question": "Which of this is a strong acid?",
-    "options": ["H2O", "NaCl", "K2O", "HCL"],
-    "answer": "HCL"
-  },{
-    "question": "What law states 'The greater the mass the greater the force of attraction' ?",
-    "options": ["Newton's law of motion", "Law of gravitation", "Darwin's law of evolution", "Avogadro's molecular law"],
-    "answer": "Law of gravitation"
+    "name": "English",
+    "difficulties": {
+      "easy": {
+        "questions": [
+          {
+            "question": "What is the past tense of the verb 'run'?",
+            "answer": "Ran",
+            "options": ["Run", "Running", "Ran", "Runned"]
+          },
+          {
+            "question": "How many letters are there in the English alphabet?",
+            "answer": "26",
+            "options": ["24", "25", "26", "27"]
+          }
+        ]
+      },
+      "medium": {
+        "questions": [
+          {
+            "question": "What is the synonym of the word 'happy'?",
+            "answer": "Joyful",
+            "options": ["Sad", "Angry", "Joyful", "Depressed"]
+          },
+          {
+            "question": "What is the antonym of the word 'ancient'?",
+            "answer": "Modern",
+            "options": ["Old", "Modern", "Historic", "Ancient"]
+          }
+        ]
+      },
+      "hard": {
+        "questions": [
+          {
+            "question": "What is a gerund?",
+            "answer": "A verb form that functions as a noun",
+            "options": ["A verb form that functions as a noun", "A noun form that functions as a verb", "A type of adjective", "A type of adverb"]
+          },
+          {
+            "question": "What is the literary term for a character's tragic flaw?",
+            "answer": "Hamartia",
+            "options": ["Hubris", "Hamartia", "Catharsis", "Anagnorisis"]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "General Knowledge",
+    "difficulties": {
+      "easy": {
+        "questions": [
+          {
+            "question": "What is the capital of France?",
+            "answer": "Paris",
+            "options": ["London", "Berlin", "Paris", "Madrid"]
+          },
+          {
+            "question": "Who wrote 'Romeo and Juliet'?",
+            "answer": "William Shakespeare",
+            "options": ["Charles Dickens", "Jane Austen", "Mark Twain", "William Shakespeare"]
+          }
+        ]
+      },
+      "medium": {
+        "questions": [
+          {
+            "question": "What is the largest planet in our solar system?",
+            "answer": "Jupiter",
+            "options": ["Mars", "Venus", "Earth", "Jupiter"]
+          },
+          {
+            "question": "Who painted the 'Mona Lisa'?",
+            "answer": "Leonardo da Vinci",
+            "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"]
+          }
+        ]
+      },
+      "hard": {
+        "questions": [
+          {
+            "question": "What is the longest river in the world?",
+            "answer": "Nile",
+            "options": ["Amazon", "Yangtze", "Nile", "Mississippi"]
+          },
+          {
+            "question": "Who developed the theory of relativity?",
+            "answer": "Albert Einstein",
+            "options": ["Isaac Newton", "Galileo Galilei", "Nikola Tesla", "Albert Einstein"]
+          }
+        ]
+      }
+    }
   }
-
 ]
