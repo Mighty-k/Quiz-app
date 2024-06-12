@@ -164,6 +164,9 @@ input[type="radio"]:checked + .custom-radio::before {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  body{
+    background-size: 200vh;
+  }
   nav {
     padding: 2% 5% !important;
   }
