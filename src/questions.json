@@ -3,64 +3,265 @@
     "name": "Biology",
     "difficulties": {
       "easy": {
-        "questions": [
+        "questions": 
+        [
           {
             "question": "What is the powerhouse of the cell?",
-            "options": ["Nucleus", "Mitochondria", "Ribosome", "Golgi apparatus"],
+            "options": ["Nucleus", "Ribosome", "Mitochondria", "Golgi apparatus"],
             "answer": "Mitochondria"
           },
           {
-            "question": "Which organ is responsible for pumping blood?",
-            "options": ["Brain", "Lungs", "Heart", "Liver"],
+            "question": "What is the basic unit of life?",
+            "options": ["Atom", "Molecule", "Cell", "Tissue"],
+            "answer": "Cell"
+          },
+          {
+            "question": "Which gas do plants absorb from the atmosphere?",
+            "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
+            "answer": "Carbon dioxide"
+          },
+          {
+            "question": "What is the chemical formula for water?",
+            "options": ["H2O", "CO2", "O2", "H2"],
+            "answer": "H2O"
+          },
+          {
+            "question": "Which organ is responsible for pumping blood throughout the body?",
+            "options": ["Lungs", "Brain", "Kidney", "Heart"],
             "answer": "Heart"
           },
           {
-            "question": "Which organ is responsible for pumping blood?",
-            "options": ["Brain", "Lungs", "Heart", "Liver"],
-            "answer": "Heart"
+            "question": "What is the process by which plants make their food?",
+            "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+            "answer": "Photosynthesis"
           },
           {
-            "question": "Which organ is responsible for pumping blood?",
-            "options": ["Brain", "Lungs", "Heart", "Liver"],
-            "answer": "Heart"
+            "question": "Which part of the plant conducts photosynthesis?",
+            "options": ["Root", "Stem", "Leaf", "Flower"],
+            "answer": "Leaf"
           },
           {
-            "question": "Which organ is responsible for pumping blood?",
-            "options": ["Brain", "Lungs", "Heart", "Liver"],
-            "answer": "Heart"
+            "question": "What is the largest organ in the human body?",
+            "options": ["Heart", "Liver", "Skin", "Brain"],
+            "answer": "Skin"
           },
           {
-            "question": "Which organ is responsible for pumping blood?",
-            "options": ["Brain", "Lungs", "Heart", "Liver"],
-            "answer": "Heart"
+            "question": "What type of blood cells help fight infections?",
+            "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+            "answer": "White blood cells"
+          },
+          {
+            "question": "What is the genetic material in cells?",
+            "options": ["RNA", "DNA", "Proteins", "Lipids"],
+            "answer": "DNA"
+          },
+          {
+            "question": "What is the term for a group of similar cells performing a specific function?",
+            "options": ["Organ", "Tissue", "Organism", "System"],
+            "answer": "Tissue"
+          },
+          {
+            "question": "Which of the following is a mammal?",
+            "options": ["Frog", "Shark", "Eagle", "Elephant"],
+            "answer": "Elephant"
+          },
+          {
+            "question": "What is the main function of red blood cells?",
+            "options": ["Fight infection", "Clot blood", "Transport oxygen", "Produce hormones"],
+            "answer": "Transport oxygen"
+          },
+          {
+            "question": "Which system in the human body is responsible for transporting blood?",
+            "options": ["Respiratory system", "Digestive system", "Nervous system", "Circulatory system"],
+            "answer": "Circulatory system"
+          },
+          {
+            "question": "What part of the brain controls balance and coordination?",
+            "options": ["Cerebrum", "Cerebellum", "Brainstem", "Hippocampus"],
+            "answer": "Cerebellum"
+          },
+          {
+            "question": "What is the process by which cells divide to form two identical cells?",
+            "options": ["Meiosis", "Mitosis", "Binary fission", "Fusion"],
+            "answer": "Mitosis"
+          },
+          {
+            "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+            "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+            "answer": "Vitamin D"
+          },
+          {
+            "question": "What type of organism is yeast?",
+            "options": ["Bacterium", "Fungus", "Alga", "Virus"],
+            "answer": "Fungus"
+          },
+          {
+            "question": "Which of the following is a function of the large intestine?",
+            "options": ["Absorption of nutrients", "Production of bile", "Absorption of water", "Digestion of proteins"],
+            "answer": "Absorption of water"
+          },
+          {
+            "question": "Which blood type is known as the universal donor?",
+            "options": ["A", "B", "AB", "O"],
+            "answer": "O"
           }
         ]
       },
       "medium": {
         "questions": [
           {
-            "question": "What process do plants use to make food?",
-            "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-            "answer": "Photosynthesis"
+            "question": "Which of the following is an example of a prokaryotic cell?",
+            "options": ["Plant cell", "Animal cell", "Bacterial cell", "Fungal cell"],
+            "answer": "Bacterial cell"
           },
           {
-            "question": "What is the primary function of red blood cells?",
-            "options": ["To fight infection", "To carry oxygen", "To clot blood", "To carry nutrients"],
-            "answer": "To carry oxygen"
+            "question": "What is the main pigment involved in photosynthesis?",
+            "options": ["Chlorophyll", "Carotene", "Xanthophyll", "Anthocyanin"],
+            "answer": "Chlorophyll"
+          },
+          {
+            "question": "Which process involves the movement of water across a semipermeable membrane?",
+            "options": ["Diffusion", "Osmosis", "Active transport", "Facilitated diffusion"],
+            "answer": "Osmosis"
+          },
+          {
+            "question": "What is the role of ribosomes in a cell?",
+            "options": ["Energy production", "Protein synthesis", "DNA replication", "Cell division"],
+            "answer": "Protein synthesis"
+          },
+          {
+            "question": "Which organelle is responsible for packaging and distributing proteins?",
+            "options": ["Nucleus", "Endoplasmic reticulum", "Golgi apparatus", "Lysosome"],
+            "answer": "Golgi apparatus"
+          },
+          {
+            "question": "Which phase of mitosis involves the alignment of chromosomes at the cell's equator?",
+            "options": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+            "answer": "Metaphase"
+          },
+          {
+            "question": "What is the function of the myelin sheath in neurons?",
+            "options": ["Insulation of axons", "Transmission of signals", "Production of neurotransmitters", "Support of cell bodies"],
+            "answer": "Insulation of axons"
+          },
+          {
+            "question": "Which molecule carries genetic information from DNA to the ribosome?",
+            "options": ["tRNA", "mRNA", "rRNA", "siRNA"],
+            "answer": "mRNA"
+          },
+          {
+            "question": "Which hormone regulates the amount of glucose in the blood?",
+            "options": ["Insulin", "Adrenaline", "Thyroxine", "Cortisol"],
+            "answer": "Insulin"
+          },
+          {
+            "question": "What type of bond holds the two strands of DNA together?",
+            "options": ["Ionic bonds", "Covalent bonds", "Hydrogen bonds", "Peptide bonds"],
+            "answer": "Hydrogen bonds"
+          },
+          {
+            "question": "What is the primary function of the large intestine?",
+            "options": ["Digestion of proteins", "Absorption of nutrients", "Water reabsorption", "Detoxification"],
+            "answer": "Water reabsorption"
+          },
+          {
+            "question": "Which of the following structures is found in plant cells but not animal cells?",
+            "options": ["Nucleus", "Mitochondria", "Chloroplast", "Ribosome"],
+            "answer": "Chloroplast"
+          },
+          {
+            "question": "Which kingdom do mushrooms belong to?",
+            "options": ["Plantae", "Animalia", "Fungi", "Protista"],
+            "answer": "Fungi"
+          },
+          {
+            "question": "What type of biomolecule are enzymes?",
+            "options": ["Carbohydrates", "Lipids", "Proteins", "Nucleic acids"],
+            "answer": "Proteins"
+          },
+          {
+            "question": "Which process produces ATP in the absence of oxygen?",
+            "options": ["Glycolysis", "Fermentation", "Citric acid cycle", "Electron transport chain"],
+            "answer": "Fermentation"
+          },
+          {
+            "question": "What is the term for a segment of DNA that codes for a protein?",
+            "options": ["Intron", "Exon", "Gene", "Codon"],
+            "answer": "Gene"
+          },
+          {
+            "question": "Which structure in the kidney filters blood to form urine?",
+            "options": ["Nephron", "Ureter", "Bladder", "Renal pelvis"],
+            "answer": "Nephron"
+          },
+          {
+            "question": "Which of the following is not a component of the cell membrane?",
+            "options": ["Phospholipids", "Proteins", "Cholesterol", "Nucleic acids"],
+            "answer": "Nucleic acids"
+          },
+          {
+            "question": "What type of symbiotic relationship benefits one organism while harming the other?",
+            "options": ["Mutualism", "Commensalism", "Parasitism", "Amensalism"],
+            "answer": "Parasitism"
+          },
+          {
+            "question": "Which organ system is responsible for producing hormones?",
+            "options": ["Nervous system", "Circulatory system", "Endocrine system", "Respiratory system"],
+            "answer": "Endocrine system"
           }
         ]
       },
       "hard": {
         "questions": [
           {
-            "question": "What type of bond holds the DNA strands together?",
-            "options": ["Ionic bond", "Covalent bond", "Hydrogen bond", "Peptide bond"],
-            "answer": "Hydrogen bond"
+            "question": "Which of the following processes occurs during the light-independent reactions of photosynthesis?",
+            "options": ["Photolysis", "Carbon fixation", "ATP synthesis", "Electron transport"],
+            "answer": "Carbon fixation"
           },
           {
-            "question": "Which enzyme is responsible for DNA replication?",
-            "options": ["DNA polymerase", "RNA polymerase", "Helicase", "Ligase"],
-            "answer": "DNA polymerase"
+            "question": "Which molecule is the final electron acceptor in the electron transport chain of cellular respiration?",
+            "options": ["NAD+", "FAD", "Oxygen", "Carbon dioxide"],
+            "answer": "Oxygen"
+          },
+          {
+            "question": "Which type of RNA is involved in the splicing of pre-mRNA in eukaryotic cells?",
+            "options": ["mRNA", "tRNA", "rRNA", "snRNA"],
+            "answer": "snRNA"
+          },
+          {
+            "question": "Which structure within the chloroplast is the site of the Calvin cycle?",
+            "options": ["Thylakoid membrane", "Stroma", "Granum", "Lumen"],
+            "answer": "Stroma"
+          },
+          {
+            "question": "Which enzyme is responsible for unwinding the DNA double helix during replication?",
+            "options": ["DNA polymerase", "Helicase", "Ligase", "Primase"],
+            "answer": "Helicase"
+          },
+          {
+            "question": "Which of the following is not a product of the Krebs cycle?",
+            "options": ["ATP", "NADH", "FADH2", "Oxygen"],
+            "answer": "Oxygen"
+          },
+          {
+            "question": "Which cellular organelle is responsible for the synthesis of lipids?",
+            "options": ["Rough ER", "Smooth ER", "Golgi apparatus", "Mitochondria"],
+            "answer": "Smooth ER"
+          },
+          {
+            "question": "What is the function of telomeres in eukaryotic chromosomes?",
+            "options": ["Protecting the ends of chromosomes", "Facilitating recombination", "Guiding chromosome alignment", "Binding to spindle fibers"],
+            "answer": "Protecting the ends of chromosomes"
+          },
+          {
+            "question": "Which of the following is a characteristic of negative feedback in biological systems?",
+            "options": ["Amplifies the initial stimulus", "Maintains homeostasis", "Is less common than positive feedback", "Creates a rapid response"],
+            "answer": "Maintains homeostasis"
+          },
+          {
+            "question": "Which hormone is primarily responsible for regulating the circadian rhythm in humans?",
+            "options": ["Cortisol", "Insulin", "Melatonin", "Adrenaline"],
+            "answer": "Melatonin"
           }
         ]
       }
@@ -72,42 +273,162 @@
       "easy": {
         "questions": [
           {
-            "question": "What is the value of π (pi) to two decimal places?",
-            "options": ["3.12", "3.14", "3.16", "3.18"],
-            "answer": "3.14"
+            "question": "What is the sum of 8 and 5?",
+            "options": ["10", "11", "12", "13"],
+            "answer": "13"
           },
           {
-            "question": "What is 7 + 5?",
-            "options": ["10", "11", "12", "13"],
+            "question": "What is the value of 7 multiplied by 3?",
+            "options": ["21", "24", "18", "19"],
+            "answer": "21"
+          },
+          {
+            "question": "What is the difference between 15 and 9?",
+            "options": ["5", "6", "7", "8"],
+            "answer": "6"
+          },
+          {
+            "question": "What is 9 divided by 3?",
+            "options": ["1", "2", "3", "4"],
+            "answer": "3"
+          },
+          {
+            "question": "What is the value of 2 squared?",
+            "options": ["2", "3", "4", "5"],
+            "answer": "4"
+          },
+          {
+            "question": "What is 5% of 200?",
+            "options": ["5", "10", "15", "20"],
+            "answer": "10"
+          },
+          {
+            "question": "What is the next number in the sequence 2, 4, 6, 8, ...?",
+            "options": ["9", "10", "11", "12"],
+            "answer": "10"
+          },
+          {
+            "question": "What is the area of a rectangle with length 4 and width 3?",
+            "options": ["7", "10", "12", "15"],
             "answer": "12"
+          },
+          {
+            "question": "What is the perimeter of a square with side length 5?",
+            "options": ["15", "20", "25", "30"],
+            "answer": "20"
+          },
+          {
+            "question": "What is the value of 3 + 4 * 2?",
+            "options": ["10", "11", "12", "14"],
+            "answer": "11"
           }
         ]
       },
       "medium": {
         "questions": [
           {
-            "question": "What is the square root of 144?",
-            "options": ["10", "11", "12", "13"],
+            "question": "What is the value of x if 3x - 5 = 10?",
+            "options": ["2", "3", "4", "5"],
+            "answer": "5"
+          },
+          {
+            "question": "What is the sum of the interior angles of a triangle?",
+            "options": ["90 degrees", "180 degrees", "270 degrees", "360 degrees"],
+            "answer": "180 degrees"
+          },
+          {
+            "question": "What is the greatest common divisor (GCD) of 24 and 36?",
+            "options": ["6", "8", "12", "18"],
             "answer": "12"
           },
           {
-            "question": "What is the derivative of x²?",
-            "options": ["x", "2x", "x²", "2"],
-            "answer": "2x"
+            "question": "If a circle has a radius of 7, what is its circumference? (Use π ≈ 3.14)",
+            "options": ["21.98", "30.68", "38.48", "43.96"],
+            "answer": "43.96"
+          },
+          {
+            "question": "What is the solution to the equation 2x^2 - 8x + 6 = 0?",
+            "options": ["1, 3", "2, 3", "1, 2", "2, 4"],
+            "answer": "1, 3"
+          },
+          {
+            "question": "What is the slope of the line passing through the points (2, 3) and (4, 7)?",
+            "options": ["1", "2", "3", "4"],
+            "answer": "2"
+          },
+          {
+            "question": "What is the area of a triangle with base 5 and height 8?",
+            "options": ["20", "25", "30", "35"],
+            "answer": "20"
+          },
+          {
+            "question": "What is the value of log10(100)?",
+            "options": ["0", "1", "2", "3"],
+            "answer": "2"
+          },
+          {
+            "question": "What is the value of the expression 2^3 * 3^2?",
+            "options": ["18", "36", "72", "108"],
+            "answer": "72"
+          },
+          {
+            "question": "What is the median of the following set of numbers: 3, 7, 9, 13, 15?",
+            "options": ["7", "9", "11", "13"],
+            "answer": "9"
           }
         ]
       },
       "hard": {
         "questions": [
           {
-            "question": "What is the integral of 1/x?",
-            "options": ["ln|x|", "x²", "e^x", "x"],
-            "answer": "ln|x|"
+            "question": "What is the derivative of f(x) = 3x^3 - 5x^2 + 6x - 2?",
+            "options": ["9x^2 - 10x + 6", "9x^2 - 10x - 6", "6x^2 - 10x + 6", "9x^2 - 5x + 6"],
+            "answer": "9x^2 - 10x + 6"
           },
           {
-            "question": "What is the limit of (1 + 1/n)^n as n approaches infinity?",
-            "options": ["0", "1", "e", "∞"],
-            "answer": "e"
+            "question": "What is the integral of f(x) = 4x^3 - 2x + 1?",
+            "options": ["x^4 - x^2 + x + C", "x^4 - x^2 + 1", "4x^4 - 2x^2 + x + C", "x^4 - x^2 + x"],
+            "answer": "x^4 - x^2 + x + C"
+          },
+          {
+            "question": "What is the value of the determinant of the matrix [[2, 3], [1, 4]]?",
+            "options": ["5", "7", "8", "10"],
+            "answer": "5"
+          },
+          {
+            "question": "What are the roots of the polynomial x^3 - 6x^2 + 11x - 6?",
+            "options": ["1, 2, 3", "2, 3, 4", "1, 3, 5", "1, 2, 4"],
+            "answer": "1, 2, 3"
+          },
+          {
+            "question": "What is the value of the infinite series Σ (1/n^2) from n=1 to ∞?",
+            "options": ["π^2/6", "π^2/4", "π^2/2", "π^2"],
+            "answer": "π^2/6"
+          },
+          {
+            "question": "What is the solution to the differential equation dy/dx = y?",
+            "options": ["y = e^x", "y = e^(-x)", "y = ln(x)", "y = x^2"],
+            "answer": "y = e^x"
+          },
+          {
+            "question": "What is the value of the limit lim (x -> 0) (sin(x)/x)?",
+            "options": ["0", "1", "-1", "∞"],
+            "answer": "1"
+          },
+          {
+            "question": "What is the Laplace transform of f(t) = e^(2t)?",
+            "options": ["1/(s-2)", "1/(s+2)", "s/(s-2)", "s/(s+2)"],
+            "answer": "1/(s-2)"
+          },
+          {
+            "question": "What is the eigenvalue of the matrix [[3, 1], [0, 2]]?",
+            "options": ["1, 2", "2, 3", "3, 4", "0, 1"],
+            "answer": "2, 3"
+          },
+          {
+            "question": "What is the radius of convergence of the power series Σ (n!*x^n) from n=0 to ∞?",
+            "options": ["1", "0", "∞", "e"],
+            "answer": "0"
           }
         ]
       }
@@ -119,42 +440,162 @@
       "easy": {
         "questions": [
           {
-            "question": "What is the force that pulls objects toward the Earth?",
-            "answer": "Gravity",
-            "options": ["Magnetism", "Gravity", "Electricity", "Friction"]
+            "question": "What is the unit of force in the International System of Units (SI)?",
+            "options": ["Newton", "Joule", "Watt", "Pascal"],
+            "answer": "Newton"
           },
           {
-            "question": "What is the unit of force in the International System of Units?",
-            "answer": "Newton",
-            "options": ["Joule", "Newton", "Watt", "Pascal"]
+            "question": "What is the acceleration due to gravity on Earth?",
+            "options": ["8.9 m/s^2", "9.8 m/s^2", "10.2 m/s^2", "11.0 m/s^2"],
+            "answer": "9.8 m/s^2"
+          },
+          {
+            "question": "Which law states that for every action, there is an equal and opposite reaction?",
+            "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Conservation of Energy"],
+            "answer": "Newton's Third Law"
+          },
+          {
+            "question": "What is the formula for kinetic energy?",
+            "options": ["KE = mv", "KE = 1/2 mv^2", "KE = mgh", "KE = Fd"],
+            "answer": "KE = 1/2 mv^2"
+          },
+          {
+            "question": "What is the speed of light in a vacuum?",
+            "options": ["2.99 x 10^8 m/s", "3.00 x 10^8 m/s", "3.01 x 10^8 m/s", "3.02 x 10^8 m/s"],
+            "answer": "3.00 x 10^8 m/s"
+          },
+          {
+            "question": "What type of energy is stored in a compressed spring?",
+            "options": ["Kinetic energy", "Thermal energy", "Chemical energy", "Potential energy"],
+            "answer": "Potential energy"
+          },
+          {
+            "question": "What is the unit of electric current?",
+            "options": ["Volt", "Ampere", "Ohm", "Coulomb"],
+            "answer": "Ampere"
+          },
+          {
+            "question": "Which phenomenon explains the bending of light as it passes from one medium to another?",
+            "options": ["Reflection", "Refraction", "Diffraction", "Interference"],
+            "answer": "Refraction"
+          },
+          {
+            "question": "What is the basic unit of charge?",
+            "options": ["Proton", "Neutron", "Electron", "Coulomb"],
+            "answer": "Coulomb"
+          },
+          {
+            "question": "What is the term for materials that do not allow electricity to flow through them easily?",
+            "options": ["Conductors", "Semiconductors", "Insulators", "Resistors"],
+            "answer": "Insulators"
           }
         ]
       },
       "medium": {
         "questions": [
           {
-            "question": "What is the speed of light in a vacuum?",
-            "answer": "Approximately 300,000 km/s",
-            "options": ["Approximately 300,000 km/s", "Approximately 150,000 km/s", "Approximately 450,000 km/s", "Approximately 600,000 km/s"]
+            "question": "What is the momentum of an object with mass 5 kg moving at a velocity of 3 m/s?",
+            "options": ["15 kg·m/s", "10 kg·m/s", "20 kg·m/s", "25 kg·m/s"],
+            "answer": "15 kg·m/s"
           },
           {
-            "question": "What is the formula for calculating kinetic energy?",
-            "answer": "1/2 mv^2",
-            "options": ["mv", "1/2 mv^2", "mv^2", "1/2 m^2v"]
+            "question": "What is the work done by a force of 10 N moving an object 5 m in the direction of the force?",
+            "options": ["10 J", "20 J", "30 J", "50 J"],
+            "answer": "50 J"
+          },
+          {
+            "question": "Which law relates the voltage, current, and resistance in an electric circuit?",
+            "options": ["Coulomb's Law", "Ohm's Law", "Faraday's Law", "Gauss's Law"],
+            "answer": "Ohm's Law"
+          },
+          {
+            "question": "What is the frequency of a wave with a period of 0.2 seconds?",
+            "options": ["2 Hz", "3 Hz", "4 Hz", "5 Hz"],
+            "answer": "5 Hz"
+          },
+          {
+            "question": "What is the power dissipated by a resistor with a resistance of 5 ohms carrying a current of 2 A?",
+            "options": ["10 W", "15 W", "20 W", "25 W"],
+            "answer": "20 W"
+          },
+          {
+            "question": "Which principle states that the buoyant force on an object is equal to the weight of the fluid displaced by the object?",
+            "options": ["Pascal's Principle", "Archimedes' Principle", "Bernoulli's Principle", "Fermat's Principle"],
+            "answer": "Archimedes' Principle"
+          },
+          {
+            "question": "What is the angular momentum of a particle with mass 2 kg, velocity 3 m/s, and radius 4 m?",
+            "options": ["12 kg·m^2/s", "16 kg·m^2/s", "24 kg·m^2/s", "32 kg·m^2/s"],
+            "answer": "24 kg·m^2/s"
+          },
+          {
+            "question": "What is the electric field strength at a point 0.5 m from a charge of 2 μC?",
+            "options": ["36 x 10^3 N/C", "72 x 10^3 N/C", "144 x 10^3 N/C", "288 x 10^3 N/C"],
+            "answer": "72 x 10^3 N/C"
+          },
+          {
+            "question": "What is the potential energy of a 3 kg object raised to a height of 4 m above the ground?",
+            "options": ["48 J", "78.4 J", "98 J", "117.6 J"],
+            "answer": "117.6 J"
+          },
+          {
+            "question": "What is the charge on a capacitor of 10 μF with a voltage of 5 V across it?",
+            "options": ["10 μC", "20 μC", "50 μC", "100 μC"],
+            "answer": "50 μC"
           }
         ]
       },
       "hard": {
         "questions": [
           {
-            "question": "What is the principle of superposition in quantum mechanics?",
-            "answer": "A particle can exist in multiple states at the same time until it is measured",
-            "options": ["A particle can exist in multiple states at the same time until it is measured", "Particles cannot exist in multiple states", "A particle exists only when measured", "Superposition has no relation to quantum mechanics"]
+            "question": "What is the relativistic factor (gamma) for an object moving at 0.8c?",
+            "options": ["1.25", "1.5", "1.67", "2"],
+            "answer": "1.67"
           },
           {
-            "question": "What is the Heisenberg Uncertainty Principle?",
-            "answer": "It is impossible to simultaneously know the exact position and momentum of a particle",
-            "options": ["It is impossible to simultaneously know the exact position and momentum of a particle", "It is possible to know both position and momentum precisely", "Uncertainty principle is related to speed of particles", "Heisenberg Uncertainty Principle is a theory of relativity"]
+            "question": "What is the energy of a photon with a wavelength of 400 nm?",
+            "options": ["3.1 x 10^-19 J", "4.96 x 10^-19 J", "5.0 x 10^-19 J", "6.2 x 10^-19 J"],
+            "answer": "4.96 x 10^-19 J"
+          },
+          {
+            "question": "What is the Schwarzschild radius of a black hole with a mass 10 times that of the Sun?",
+            "options": ["29.5 km", "29.5 m", "295 km", "295 m"],
+            "answer": "29.5 km"
+          },
+          {
+            "question": "What is the electric potential at a point 0.1 m away from a charge of 5 μC?",
+            "options": ["4.5 x 10^4 V", "3.6 x 10^5 V", "4.5 x 10^5 V", "3.6 x 10^6 V"],
+            "answer": "4.5 x 10^5 V"
+          },
+          {
+            "question": "What is the de Broglie wavelength of an electron moving at a speed of 2 x 10^6 m/s?",
+            "options": ["3.6 x 10^-11 m", "1.8 x 10^-10 m", "2.4 x 10^-10 m", "7.3 x 10^-10 m"],
+            "answer": "3.6 x 10^-11 m"
+          },
+          {
+            "question": "What is the capacitance of a parallel plate capacitor with an area of 1 m^2, a separation of 1 mm, and a dielectric constant of 2?",
+            "options": ["1.77 x 10^-11 F", "1.77 x 10^-9 F", "1.77 x 10^-7 F", "1.77 x 10^-5 F"],
+            "answer": "1.77 x 10^-9 F"
+          },
+          {
+            "question": "What is the magnetic flux through a loop of area 0.1 m^2 placed in a magnetic field of 0.5 T at an angle of 30 degrees to the field?",
+            "options": ["0.025 Wb", "0.043 Wb", "0.05 Wb", "0.075 Wb"],
+            "answer": "0.043 Wb"
+          },
+          {
+            "question": "What is the wavelength of an electron in the first Bohr orbit of the hydrogen atom?",
+            "options": ["0.33 nm", "0.66 nm", "1.0 nm", "1.5 nm"],
+            "answer": "0.33 nm"
+          },
+          {
+            "question": "What is the binding energy per nucleon of a helium-4 nucleus?",
+            "options": ["7.1 MeV", "8.2 MeV", "28.3 MeV", "32.4 MeV"],
+            "answer": "7.1 MeV"
+          },
+          {
+            "question": "What is the rate of heat conduction through a wall with an area of 10 m^2, a thickness of 0.1 m, and a temperature difference of 20 degrees Celsius, if the thermal conductivity of the material is 0.5 W/m·K?",
+            "options": ["50 W", "100 W", "150 W", "200 W"],
+            "answer": "100 W"
           }
         ]
       }
@@ -167,13 +608,53 @@
         "questions": [
           {
             "question": "What is the chemical symbol for water?",
-            "answer": "H2O",
-            "options": ["H2O", "O2", "CO2", "HO2"]
+            "options": ["H2O", "O2", "CO2", "NaCl"],
+            "answer": "H2O"
           },
           {
-            "question": "What is the pH level of pure water?",
-            "answer": "7",
-            "options": ["7", "5", "8", "6"]
+            "question": "What is the atomic number of hydrogen?",
+            "options": ["1", "2", "3", "4"],
+            "answer": "1"
+          },
+          {
+            "question": "Which element is commonly used in pencils?",
+            "options": ["Carbon", "Sulfur", "Lead", "Iron"],
+            "answer": "Carbon"
+          },
+          {
+            "question": "What is the chemical formula for table salt?",
+            "options": ["NaCl", "KCl", "NaBr", "KBr"],
+            "answer": "NaCl"
+          },
+          {
+            "question": "What is the pH of a neutral solution?",
+            "options": ["0", "7", "14", "10"],
+            "answer": "7"
+          },
+          {
+            "question": "Which gas is most abundant in the Earth's atmosphere?",
+            "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+            "answer": "Nitrogen"
+          },
+          {
+            "question": "What is the main component of natural gas?",
+            "options": ["Ethane", "Propane", "Butane", "Methane"],
+            "answer": "Methane"
+          },
+          {
+            "question": "What type of bond involves the sharing of electron pairs between atoms?",
+            "options": ["Ionic bond", "Covalent bond", "Hydrogen bond", "Metallic bond"],
+            "answer": "Covalent bond"
+          },
+          {
+            "question": "What is the name of the process by which plants make their own food using sunlight?",
+            "options": ["Respiration", "Digestion", "Photosynthesis", "Fermentation"],
+            "answer": "Photosynthesis"
+          },
+          {
+            "question": "What is the chemical symbol for gold?",
+            "options": ["Ag", "Au", "Pb", "Fe"],
+            "answer": "Au"
           }
         ]
       },
@@ -181,27 +662,107 @@
         "questions": [
           {
             "question": "What is the molar mass of carbon dioxide (CO2)?",
-            "answer": "44.01 g/mol",
-            "options": ["44.01 g/mol", "28.01 g/mol", "16.00 g/mol", "32.00 g/mol"]
+            "options": ["28 g/mol", "32 g/mol", "44 g/mol", "48 g/mol"],
+            "answer": "44 g/mol"
           },
           {
-            "question": "What is Avogadro's number?",
-            "answer": "6.022 x 10^23",
-            "options": ["6.022 x 10^23", "6.022 x 10^20", "6.022 x 10^22", "6.022 x 10^24"]
+            "question": "What is the name of the compound with the formula NH3?",
+            "options": ["Nitric acid", "Ammonia", "Ammonium", "Nitrate"],
+            "answer": "Ammonia"
+          },
+          {
+            "question": "Which element has the highest electronegativity?",
+            "options": ["Oxygen", "Fluorine", "Chlorine", "Nitrogen"],
+            "answer": "Fluorine"
+          },
+          {
+            "question": "What is the oxidation state of sulfur in H2SO4?",
+            "options": ["+2", "+4", "+6", "+8"],
+            "answer": "+6"
+          },
+          {
+            "question": "What type of reaction is represented by the equation A + B -> AB?",
+            "options": ["Decomposition", "Single replacement", "Double replacement", "Combination"],
+            "answer": "Combination"
+          },
+          {
+            "question": "What is the electron configuration of a sodium (Na) atom?",
+            "options": ["1s2 2s2 2p6", "1s2 2s2 2p6 3s1", "1s2 2s2 2p6 3p1", "1s2 2s2 2p6 3s2"],
+            "answer": "1s2 2s2 2p6 3s1"
+          },
+          {
+            "question": "What is the main constituent of vinegar?",
+            "options": ["Formic acid", "Acetic acid", "Citric acid", "Lactic acid"],
+            "answer": "Acetic acid"
+          },
+          {
+            "question": "What is the geometry of methane (CH4) molecule?",
+            "options": ["Linear", "Trigonal planar", "Tetrahedral", "Bent"],
+            "answer": "Tetrahedral"
+          },
+          {
+            "question": "What is the pH of a 0.01 M HCl solution?",
+            "options": ["2", "3", "4", "5"],
+            "answer": "2"
+          },
+          {
+            "question": "Which element is the primary component of organic molecules?",
+            "options": ["Oxygen", "Carbon", "Hydrogen", "Nitrogen"],
+            "answer": "Carbon"
           }
         ]
       },
       "hard": {
-        "questions": [
+        "questions":[
           {
-            "question": "What is the electron configuration of the element Iron (Fe)?",
-            "answer": "[Ar] 3d^6 4s^2",
-            "options": ["[Ar] 3d^6 4s^2", "[Ar] 3d^5 4s^2", "[Ne] 3d^6 4s^2", "[Kr] 3d^6 4s^2"]
+            "question": "What is the hybridization of the carbon atoms in ethene (C2H4)?",
+            "options": ["sp", "sp2", "sp3", "sp3d"],
+            "answer": "sp2"
           },
           {
-            "question": "What is the name of the process by which a solid changes directly into a gas?",
-            "answer": "Sublimation",
-            "options": ["Sublimation", "Evaporation", "Condensation", "Deposition"]
+            "question": "What is the Gibbs free energy change (ΔG) for a reaction at equilibrium?",
+            "options": ["Positive", "Negative", "Zero", "Cannot be determined"],
+            "answer": "Zero"
+          },
+          {
+            "question": "Which type of spectroscopy is used to determine the molecular vibrations?",
+            "options": ["NMR spectroscopy", "IR spectroscopy", "UV-Vis spectroscopy", "Mass spectrometry"],
+            "answer": "IR spectroscopy"
+          },
+          {
+            "question": "What is the rate law for a reaction that is first-order in A and second-order in B?",
+            "options": ["rate = k[A][B]", "rate = k[A]^2[B]", "rate = k[A][B]^2", "rate = k[A]^2[B]^2"],
+            "answer": "rate = k[A][B]^2"
+          },
+          {
+            "question": "What is the main factor that determines the strength of a metallic bond?",
+            "options": ["Number of protons", "Number of neutrons", "Number of valence electrons", "Atomic radius"],
+            "answer": "Number of valence electrons"
+          },
+          {
+            "question": "What is the electron affinity of an element?",
+            "options": ["Energy required to remove an electron", "Energy released when an electron is added", "Energy required to add a proton", "Energy released when a neutron is added"],
+            "answer": "Energy released when an electron is added"
+          },
+          {
+            "question": "What is the main product of the aldol condensation reaction?",
+            "options": ["Alcohol", "Aldehyde", "Ketone", "β-hydroxy carbonyl compound"],
+            "answer": "β-hydroxy carbonyl compound"
+          },
+          {
+            "question": "What is the common name for the compound CH3-CH2-O-CH2-CH3?",
+            "options": ["Diethyl ether", "Ethyl methyl ether", "Dimethyl ether", "Ethylene glycol"],
+            "answer": "Diethyl ether"
+          },
+          {
+            "question": "What is the main factor that affects the chemical shift in NMR spectroscopy?",
+            "options": ["Electron density", "Molecular weight", "Bond length", "Atomic number"],
+            "answer": "Electron density"
+          },
+          {
+            "question": "Which of the following reactions involves a radical intermediate?",
+            "options": ["Hydrogenation", "Halogenation of alkanes", "Hydrolysis", "Nitration of benzene"],
+            "answer": "Halogenation of alkanes"
           }
         ]
       }
@@ -211,44 +772,164 @@
     "name": "English",
     "difficulties": {
       "easy": {
-        "questions": [
+        "questions":[
           {
-            "question": "What is the past tense of the verb 'run'?",
-            "answer": "Ran",
-            "options": ["Run", "Running", "Ran", "Runned"]
+            "question": "What is the synonym of 'happy'?",
+            "options": ["Sad", "Joyful", "Angry", "Tired"],
+            "answer": "Joyful"
           },
           {
-            "question": "How many letters are there in the English alphabet?",
-            "answer": "26",
-            "options": ["24", "25", "26", "27"]
+            "question": "What is the antonym of 'big'?",
+            "options": ["Small", "Huge", "Large", "Tall"],
+            "answer": "Small"
+          },
+          {
+            "question": "Which of the following is a noun?",
+            "options": ["Run", "Jump", "Happiness", "Quickly"],
+            "answer": "Happiness"
+          },
+          {
+            "question": "Which word completes the sentence: She is ____ the store.",
+            "options": ["In", "At", "On", "With"],
+            "answer": "At"
+          },
+          {
+            "question": "What is the past tense of 'go'?",
+            "options": ["Gone", "Goes", "Went", "Going"],
+            "answer": "Went"
+          },
+          {
+            "question": "What is the plural form of 'child'?",
+            "options": ["Childs", "Children", "Childes", "Childrens"],
+            "answer": "Children"
+          },
+          {
+            "question": "Which word is a verb?",
+            "options": ["Beautiful", "Run", "Quickly", "Green"],
+            "answer": "Run"
+          },
+          {
+            "question": "What is the correct spelling?",
+            "options": ["Receve", "Receive", "Recieve", "Receave"],
+            "answer": "Receive"
+          },
+          {
+            "question": "What is a synonym for 'quick'?",
+            "options": ["Fast", "Slow", "Lazy", "Late"],
+            "answer": "Fast"
+          },
+          {
+            "question": "Which of the following is an adjective?",
+            "options": ["Blue", "Run", "Slowly", "Cat"],
+            "answer": "Blue"
           }
         ]
       },
       "medium": {
         "questions": [
           {
-            "question": "What is the synonym of the word 'happy'?",
-            "answer": "Joyful",
-            "options": ["Sad", "Angry", "Joyful", "Depressed"]
+            "question": "What is the main theme of George Orwell's '1984'?",
+            "options": ["Love", "Freedom", "Totalitarianism", "Friendship"],
+            "answer": "Totalitarianism"
           },
           {
-            "question": "What is the antonym of the word 'ancient'?",
-            "answer": "Modern",
-            "options": ["Old", "Modern", "Historic", "Ancient"]
+            "question": "Who wrote 'Pride and Prejudice'?",
+            "options": ["Charlotte Brontë", "Emily Brontë", "Jane Austen", "Mary Shelley"],
+            "answer": "Jane Austen"
+          },
+          {
+            "question": "Which poetic device is used in the phrase 'The wind whispered through the trees'?",
+            "options": ["Simile", "Metaphor", "Personification", "Hyperbole"],
+            "answer": "Personification"
+          },
+          {
+            "question": "What is the purpose of a thesis statement in an essay?",
+            "options": ["To entertain the reader", "To summarize the conclusion", "To state the main argument", "To describe the topic"],
+            "answer": "To state the main argument"
+          },
+          {
+            "question": "What is the term for a word that has the opposite meaning of another word?",
+            "options": ["Synonym", "Antonym", "Homonym", "Acronym"],
+            "answer": "Antonym"
+          },
+          {
+            "question": "In literature, what is an 'allusion'?",
+            "options": ["A direct statement", "A reference to another work", "A type of irony", "A form of metaphor"],
+            "answer": "A reference to another work"
+          },
+          {
+            "question": "Which narrative point of view uses 'I' and 'we'?",
+            "options": ["First person", "Second person", "Third person limited", "Third person omniscient"],
+            "answer": "First person"
+          },
+          {
+            "question": "What is the difference between a metaphor and a simile?",
+            "options": ["A metaphor uses 'like' or 'as'", "A simile uses 'like' or 'as'", "A metaphor is longer", "A simile is more literal"],
+            "answer": "A simile uses 'like' or 'as'"
+          },
+          {
+            "question": "What is the main character in a story called?",
+            "options": ["Antagonist", "Protagonist", "Narrator", "Supporting character"],
+            "answer": "Protagonist"
+          },
+          {
+            "question": "What is a 'theme' in literature?",
+            "options": ["The plot", "The setting", "The main idea", "The character development"],
+            "answer": "The main idea"
           }
         ]
       },
       "hard": {
         "questions": [
           {
-            "question": "What is a gerund?",
-            "answer": "A verb form that functions as a noun",
-            "options": ["A verb form that functions as a noun", "A noun form that functions as a verb", "A type of adjective", "A type of adverb"]
+            "question": "What is the primary conflict in Shakespeare's 'Hamlet'?",
+            "options": ["Man vs. Society", "Man vs. Nature", "Man vs. Self", "Man vs. Man"],
+            "answer": "Man vs. Self"
           },
           {
-            "question": "What is the literary term for a character's tragic flaw?",
-            "answer": "Hamartia",
-            "options": ["Hubris", "Hamartia", "Catharsis", "Anagnorisis"]
+            "question": "What is the literary term for a recurring object, concept, or structure in a work of literature?",
+            "options": ["Motif", "Theme", "Symbol", "Allegory"],
+            "answer": "Motif"
+          },
+          {
+            "question": "Who is the author of the epic poem 'Paradise Lost'?",
+            "options": ["John Milton", "Geoffrey Chaucer", "Edmund Spenser", "John Donne"],
+            "answer": "John Milton"
+          },
+          {
+            "question": "What is an 'anaphora' in literature?",
+            "options": ["A comparison using 'like' or 'as'", "A direct address to an absent or imaginary person", "Repetition of a word or phrase at the beginning of successive clauses", "A play on words"],
+            "answer": "Repetition of a word or phrase at the beginning of successive clauses"
+          },
+          {
+            "question": "In 'To Kill a Mockingbird', what does the mockingbird symbolize?",
+            "options": ["Innocence", "Courage", "Racism", "Justice"],
+            "answer": "Innocence"
+          },
+          {
+            "question": "What is the rhyme scheme of a Shakespearean sonnet?",
+            "options": ["ABAB CDCD EFEF GG", "ABBA ABBA CDE CDE", "AABB CCDD EEFF GG", "ABAB BCBC CDCD EE"],
+            "answer": "ABAB CDCD EFEF GG"
+          },
+          {
+            "question": "Who coined the term 'stream of consciousness'?",
+            "options": ["James Joyce", "Virginia Woolf", "William James", "T.S. Eliot"],
+            "answer": "William James"
+          },
+          {
+            "question": "What is the main setting of F. Scott Fitzgerald's 'The Great Gatsby'?",
+            "options": ["Los Angeles", "Chicago", "New York", "Boston"],
+            "answer": "New York"
+          },
+          {
+            "question": "In literature, what is a 'bildungsroman'?",
+            "options": ["A tragic story", "A coming-of-age story", "A horror story", "A love story"],
+            "answer": "A coming-of-age story"
+          },
+          {
+            "question": "Who wrote 'One Hundred Years of Solitude'?",
+            "options": ["Gabriel Garcia Marquez", "Pablo Neruda", "Jorge Luis Borges", "Isabel Allende"],
+            "answer": "Gabriel Garcia Marquez"
           }
         ]
       }
@@ -261,43 +942,163 @@
         "questions": [
           {
             "question": "What is the capital of France?",
-            "answer": "Paris",
-            "options": ["London", "Berlin", "Paris", "Madrid"]
+            "options": ["Paris", "London", "Rome", "Berlin"],
+            "answer": "Paris"
           },
           {
-            "question": "Who wrote 'Romeo and Juliet'?",
-            "answer": "William Shakespeare",
-            "options": ["Charles Dickens", "Jane Austen", "Mark Twain", "William Shakespeare"]
+            "question": "Which planet is known as the Red Planet?",
+            "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+            "answer": "Mars"
+          },
+          {
+            "question": "Who wrote 'Harry Potter'?",
+            "options": ["J.K. Rowling", "J.R.R. Tolkien", "George R.R. Martin", "Stephen King"],
+            "answer": "J.K. Rowling"
+          },
+          {
+            "question": "What is the largest ocean on Earth?",
+            "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+            "answer": "Pacific Ocean"
+          },
+          {
+            "question": "Which country is known as the Land of the Rising Sun?",
+            "options": ["China", "Japan", "Korea", "Thailand"],
+            "answer": "Japan"
+          },
+          {
+            "question": "Who was the first president of the United States?",
+            "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+            "answer": "George Washington"
+          },
+          {
+            "question": "What is the smallest prime number?",
+            "options": ["0", "1", "2", "3"],
+            "answer": "2"
+          },
+          {
+            "question": "Which element has the chemical symbol 'O'?",
+            "options": ["Oxygen", "Gold", "Silver", "Iron"],
+            "answer": "Oxygen"
+          },
+          {
+            "question": "What is the largest mammal?",
+            "options": ["Elephant", "Blue Whale", "Giraffe", "Rhino"],
+            "answer": "Blue Whale"
+          },
+          {
+            "question": "Who painted the Mona Lisa?",
+            "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
+            "answer": "Leonardo da Vinci"
           }
         ]
       },
       "medium": {
         "questions": [
           {
-            "question": "What is the largest planet in our solar system?",
-            "answer": "Jupiter",
-            "options": ["Mars", "Venus", "Earth", "Jupiter"]
+            "question": "What is the capital of Australia?",
+            "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+            "answer": "Canberra"
           },
           {
-            "question": "Who painted the 'Mona Lisa'?",
-            "answer": "Leonardo da Vinci",
-            "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"]
+            "question": "Which scientist is known for the theory of relativity?",
+            "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Nikola Tesla"],
+            "answer": "Albert Einstein"
+          },
+          {
+            "question": "What is the longest river in the world?",
+            "options": ["Amazon River", "Nile River", "Yangtze River", "Mississippi River"],
+            "answer": "Nile River"
+          },
+          {
+            "question": "Who was the British Prime Minister during World War II?",
+            "options": ["Winston Churchill", "Neville Chamberlain", "Margaret Thatcher", "Tony Blair"],
+            "answer": "Winston Churchill"
+          },
+          {
+            "question": "What is the main ingredient in traditional Japanese miso soup?",
+            "options": ["Soybeans", "Rice", "Wheat", "Barley"],
+            "answer": "Soybeans"
+          },
+          {
+            "question": "What is the largest desert in the world?",
+            "options": ["Sahara Desert", "Gobi Desert", "Kalahari Desert", "Antarctic Desert"],
+            "answer": "Antarctic Desert"
+          },
+          {
+            "question": "Who wrote the play 'Romeo and Juliet'?",
+            "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+            "answer": "William Shakespeare"
+          },
+          {
+            "question": "Which element has the atomic number 6?",
+            "options": ["Oxygen", "Hydrogen", "Nitrogen", "Carbon"],
+            "answer": "Carbon"
+          },
+          {
+            "question": "What is the smallest country in the world by area?",
+            "options": ["Monaco", "San Marino", "Liechtenstein", "Vatican City"],
+            "answer": "Vatican City"
+          },
+          {
+            "question": "Who invented the telephone?",
+            "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Guglielmo Marconi"],
+            "answer": "Alexander Graham Bell"
           }
         ]
       },
       "hard": {
         "questions": [
           {
-            "question": "What is the longest river in the world?",
-            "answer": "Nile",
-            "options": ["Amazon", "Yangtze", "Nile", "Mississippi"]
+            "question": "What is the chemical formula for sulfuric acid?",
+            "options": ["HCl", "HNO3", "H2SO4", "H2CO3"],
+            "answer": "H2SO4"
           },
           {
-            "question": "Who developed the theory of relativity?",
-            "answer": "Albert Einstein",
-            "options": ["Isaac Newton", "Galileo Galilei", "Nikola Tesla", "Albert Einstein"]
+            "question": "Who is considered the father of modern physics?",
+            "options": ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Niels Bohr"],
+            "answer": "Albert Einstein"
+          },
+          {
+            "question": "What is the capital of Kazakhstan?",
+            "options": ["Almaty", "Astana", "Bishkek", "Tashkent"],
+            "answer": "Astana"
+          },
+          {
+            "question": "In which year did the Berlin Wall fall?",
+            "options": ["1987", "1988", "1989", "1990"],
+            "answer": "1989"
+          },
+          {
+            "question": "What is the hardest natural substance on Earth?",
+            "options": ["Gold", "Iron", "Diamond", "Platinum"],
+            "answer": "Diamond"
+          },
+          {
+            "question": "Which ancient civilization built the Machu Picchu complex in Peru?",
+            "options": ["Aztec", "Maya", "Inca", "Olmec"],
+            "answer": "Inca"
+          },
+          {
+            "question": "Who discovered penicillin?",
+            "options": ["Marie Curie", "Louis Pasteur", "Alexander Fleming", "Joseph Lister"],
+            "answer": "Alexander Fleming"
+          },
+          {
+            "question": "Which planet has the most moons?",
+            "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+            "answer": "Saturn"
+          },
+          {
+            "question": "What is the primary language spoken in Brazil?",
+            "options": ["Spanish", "Portuguese", "French", "English"],
+            "answer": "Portuguese"
+          },
+          {
+            "question": "Who was the first woman to win a Nobel Prize?",
+            "options": ["Marie Curie", "Rosalind Franklin", "Ada Lovelace", "Florence Nightingale"],
+            "answer": "Marie Curie"
           }
-        ]
+        ] 
       }
     }
   }

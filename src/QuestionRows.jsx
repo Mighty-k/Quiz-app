@@ -9,7 +9,7 @@ const QuestionRow = ({ question, index, handleOptionChange, selectedOption }) =>
   return (
     <div className="question-row container row">
         <div className="container col">
-        <h4>{question.question}</h4>
+        <h4>Q{index + 1}:  {question.question}</h4> 
         
         {question.options.map((option, i) => (
         <div className="radio-container" key={i}>

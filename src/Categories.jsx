@@ -16,11 +16,12 @@
                         className="subject"
                         whileHover={{scale:0.9}}
                         onClick={handleToggle}
+                        transition={{duration:0.01}}
                         >
                             <motion.h3
                             initial={{fontSize:22,y:0}}
                             animate={{ fontSize: expanded ? 18 : 24, y: expanded ? -10 : 0 }}
-                            transition={{duration:0.1}}
+                            transition={{duration:0.01}}
                             >{name}</motion.h3>
                         
                             { expanded && (

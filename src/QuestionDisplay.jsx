@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import questionsData from './questions.json';
 import QuestionRow from './QuestionRows';
 import { motion } from 'framer-motion';
@@ -8,10 +8,13 @@ import Nav from './Nav';
 
 const QuestionDisplay = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const { subject, difficulty } = location.state;
   const [currentPage, setCurrentPage] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState({});
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
   const questionsPerPage = 4;
 
   // Ensure the selected subject and difficulty exist in the questions data
@@ -23,6 +26,8 @@ const QuestionDisplay = () => {
   const currentQuestions = subjectData.difficulties[difficulty].questions;
 
   const totalPages = Math.ceil(currentQuestions.length / questionsPerPage);
+
+
 
   const handleNextPage = () => {
     if (currentPage < totalPages - 1) {
@@ -43,6 +48,10 @@ const QuestionDisplay = () => {
     });
   };
 
+  const handleSubmit = () => {
+    navigate('/results', { state: { subject, difficulty, selectedOptions } });
+  };
+
   const displayedQuestions = currentQuestions.slice(
     currentPage * questionsPerPage,
     (currentPage + 1) * questionsPerPage
@@ -50,41 +59,49 @@ const QuestionDisplay = () => {
 
   return (
     <>
-    <Nav/>
-        <div className="question-display container">
-      {displayedQuestions.map((question, index) => (
-        <QuestionRow
-          key={index}
-          question={question}
-          index={index + currentPage * questionsPerPage}
-          handleOptionChange={handleOptionChange}
-          selectedOption={selectedOptions[index + currentPage * questionsPerPage]}
-        />
-      ))}
+      <Nav />
+      <div className="question-display container">
+        {displayedQuestions.map((question, index) => (
+          <QuestionRow
+            key={index}
+            question={question}
+            index={index + currentPage * questionsPerPage}
+            handleOptionChange={handleOptionChange}
+            selectedOption={selectedOptions[index + currentPage * questionsPerPage]}
+          />
+        ))}
 
-      <div className="pagination-buttons">
-        {currentPage > 0 && (
-           <motion.button
-           onClick={handlePreviousPage}
-           whileTap={{ scale: 0.95 }}
-           transition={{ type: 'spring', stiffness: 300 }}
-         >
-           Previous
-         </motion.button>
-       )}
-       {currentPage < totalPages - 1 && (
-         <motion.button
-           onClick={handleNextPage}
-           whileTap={{ scale: 0.95 }}
-           transition={{ type: 'spring', stiffness: 300 }}
-         >
-           Next
-         </motion.button>   
-        )}
+        <div className="pagination-buttons">
+          {currentPage > 0 && (
+            <motion.button
+              onClick={handlePreviousPage}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
+              Previous
+            </motion.button>
+          )}
+          {currentPage < totalPages - 1 && (
+            <motion.button
+              onClick={handleNextPage}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
+              Next
+            </motion.button>
+          )}
+          {currentPage === totalPages - 1 && (
+            <motion.button
+              onClick={handleSubmit}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
+              Submit
+            </motion.button>
+          )}
+        </div>
       </div>
-    </div>
     </>
-    
   );
 };
 

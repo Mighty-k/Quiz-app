@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 body {
@@ -11,21 +11,22 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    font-weight: 700 !important;
+    font-weight: 500 !important;
     font-size: 20px !important;
     color: #1F1300 !important;
-    transition: all 0.5s !important;
+    transition: all 0s !important;
     cursor: default;
     overflow-x: hidden; /* Prevent horizontal scroll */ 
 }
 
 nav {
   background-image: url('/src/img/thinkn.jpeg') !important;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 2% 7% !important;
   position: fixed !important;
-  width: 100%;
+  width:100%;
+  height: 3%;
   top: 0;
   z-index: 99;
 }
@@ -86,8 +87,8 @@ nav a {
 }
 
 .question-row {
-  margin: 5%;
-  padding: 3%;
+  margin: 3%;
+  padding: 2%;
   background-color: #982505f6;
   width: 100%;
   border-radius: 10px;
@@ -162,11 +163,46 @@ input[type="radio"]:checked + .custom-radio::before {
   transition: all 0.5s;
 }
 
+.results-container{
+  margin: 8%;
+  
+}
+.results-container h2{
+  font-size: 25px;
+  color: white;
+  background-color: #cb9008a5;
+  padding: 1%;
+  border-radius: 5px;
+}
+.quest-ans{
+  background-color: #982505f6;
+  margin-bottom: 2%;
+  padding: 3%;
+  border-radius: 10px;  
+  color: white;
+}
+.question-review{
+  list-style: none;
+}
+
+.questionn{
+  font-size: 20px;
+}
+.back-btn button{
+  background-color: #cb9108;
+  color: white;
+  padding: 0.5% 1%;
+  border:2px solid #3d2902;
+  border-radius: 5px;
+}
+.back-btn button:hover {
+  background-color: #3d2902;
+  border:2px solid #cb9108;
+  transition: all 0.5s;
+}
 /* Mobile Styles */
 @media (max-width: 768px) {
-  body{
-    background-size: 200vh;
-  }
+ 
   nav {
     padding: 2% 5% !important;
   }
