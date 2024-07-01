@@ -23,7 +23,8 @@ nav {
   background-image: url('/src/img/thinkn.jpeg') !important;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 2% 7% !important;
+  padding: 3% !important;
+  padding-top: 1% !important;
   position: fixed !important;
   width:100%;
   height: 3%;

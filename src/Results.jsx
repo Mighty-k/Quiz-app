@@ -31,7 +31,7 @@ const Results = () => {
     <>
       <Nav />
       <div className="results-container container">
-        <h2>You got {score} out of {currentQuestions.length} questions correct. </h2>
+        <h2>You got {score} out of {currentQuestions.length} questions correct. Difficulty : {difficulty.toUpperCase()} </h2>
         
         <ul>
         
