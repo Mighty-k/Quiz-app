@@ -1,20 +1,25 @@
-import 'bootstrap'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Home from './Home'
-import QuestionDisplay from './QuestionDisplay'
-import Results from './Results'
-import ScrollToTop from './ScrollTop'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion'
+import Home from './pages/Home'
+import Quiz from './pages/Quiz'
+import Results from './pages/Results'
+import NotFound from './pages/NotFound'
+import './index.css'
 
-const App = () => {
-  return(
-   <Router>
-    <ScrollToTop />
-    <Routes>
-      <Route exact path='/' element = {<Home/>}/>
-      <Route exact path='/quiz' element = {<QuestionDisplay/>}/>
-      <Route path="/results" element={<Results/>} />
-    </Routes>
-   </Router>
+function App() {
+  return (
+    <Router>
+      <AnimatePresence mode='wait'>
+        <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/quiz" element={<Quiz />} />
+            <Route path="/results" element={<Results />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+      </AnimatePresence>
+    </Router>
   )
 }
 

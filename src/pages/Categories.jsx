@@ -1,6 +1,6 @@
     import { useState } from "react";
     import { motion } from "framer-motion";
-
+    import PropTypes from 'prop-types';
     const Categories = ({name,difficulties, onSelect}) => {
     const [ expanded,setExpanded] = useState(false)
    
@@ -48,4 +48,13 @@
         </>
     )
     }
+    Categories.propTypes = {
+        name: PropTypes.string.isRequired,
+        difficulties: PropTypes.shape({
+          easy: PropTypes.object,
+          medium: PropTypes.object,
+          hard: PropTypes.object
+        }).isRequired,
+        onSelect: PropTypes.func.isRequired
+      };
     export default Categories
