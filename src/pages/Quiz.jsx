@@ -38,6 +38,30 @@ const Quiz = () => {
        }
        return () => clearInterval(interval)
      }, [timer, isTimerRunning])
+
+// Save progress whenever selectedOptions changes
+useEffect(() => {
+  const progress = {
+    subject,
+    difficulty,
+    currentIndex,
+    selectedOptions,
+    timestamp: Date.now(),
+  };
+  localStorage.setItem('quizProgress', JSON.stringify(progress));
+}, [selectedOptions, currentIndex, subject, difficulty]);
+
+// Load saved progress on mount
+useEffect(() => {
+  const saved = localStorage.getItem('quizProgress');
+  if (saved) {
+    const { subject: savedSubject, difficulty: savedDiff, currentIndex: savedIndex, selectedOptions: savedOpts } = JSON.parse(saved);
+    if (savedSubject === subject && savedDiff === difficulty) {
+      setCurrentIndex(savedIndex);
+      setSelectedOptions(savedOpts);
+    }
+  }
+}, [subject, difficulty]);
      
      // ✅ Only AFTER hooks, include conditional return
      if (!subjectData || !subjectData.difficulties[difficulty]) {
@@ -54,20 +78,54 @@ const Quiz = () => {
       [questionIndex]: option
     })
   }
-
-  const handleNext = () => {
-    setIsTimerRunning(false)
-    setTimeout(() => {
-      if (currentIndex < questions.length - 1) {
-        setCurrentIndex(currentIndex + 1)
-        setTimer(60)
-        setIsTimerRunning(true)
+const handleNext = useCallback(() => {
+  setIsTimerRunning(false);
+  const timeoutId = setTimeout(() => {
+    if (currentIndex < questions.length - 1) {
+      setCurrentIndex((prev) => prev + 1); // Functional update
+      setTimer(60);
+      setIsTimerRunning(true);
+    } else {
+      if (window.confirm("Submit your quiz?")) {
+        navigate('/results', { state: { subject, difficulty, selectedOptions } });
       } else {
-        navigate('/results', { state: { subject, difficulty, selectedOptions } })
+        setIsTimerRunning(true);
       }
-    }, 300)
-  }
+    }
+  }, 300);
 
+  return () => clearTimeout(timeoutId);
+}, [currentIndex, questions.length, navigate, subject, difficulty, selectedOptions]);
+
+// Timer useEffect (now includes handleNext)
+useEffect(() => {
+  let interval;
+  if (isTimerRunning && timer > 0) {
+    interval = setInterval(() => setTimer((prev) => prev - 1), 1000);
+  } else if (timer === 0) {
+    handleNext();
+  }
+  return () => clearInterval(interval);
+}, [timer, isTimerRunning, handleNext]);
+
+// Debounced localStorage save
+useEffect(() => {
+  const debounceTimer = setTimeout(() => {
+    try {
+      localStorage.setItem('quizProgress', JSON.stringify({
+        subject,
+        difficulty,
+        currentIndex,
+        selectedOptions,
+        timestamp: Date.now(),
+      }));
+    } catch (e) {
+      console.error("Failed to save progress:", e);
+    }
+  }, 500);
+
+  return () => clearTimeout(debounceTimer);
+}, [selectedOptions, currentIndex, subject, difficulty]);
   const handlePrevious = () => {
     setIsTimerRunning(false)
     setTimeout(() => {
