@@ -1,141 +1,128 @@
-import { useState, useEffect } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
-import questionsData from '../data/questions.json'
-import Navbar from '../components/Navbar'
-import QuestionCard from '../components/QuestionCard'
-import ProgressBar from '../components/ProgressBar'
+import { useState, useEffect, useCallback } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+import questionsData from '../data/questions.json';
+import Navbar from '../components/Navbar';
+import QuestionCard from '../components/QuestionCard';
+import ProgressBar from '../components/ProgressBar';
 
 const Quiz = () => {
-     // 1. First, declare ALL hooks at the top
-     const [currentIndex, setCurrentIndex] = useState(0)
-     const [selectedOptions, setSelectedOptions] = useState({})
-     const [timer, setTimer] = useState(60)
-     const [isTimerRunning, setIsTimerRunning] = useState(true)
-     
-     const location = useLocation()
-     const navigate = useNavigate()
-     const { subject, difficulty } = location.state || {}
-     
-     const subjectData = questionsData.find((sub) => sub.name === subject)
-     
-     // ✅ Conditional navigation still inside useEffect
-     useEffect(() => {
-       if (!subject || !difficulty) {
-         navigate('/')
-       }
-     }, [subject, difficulty, navigate])
-     
-     // ✅ Timer logic useEffect
-     useEffect(() => {
-       let interval
-       if (isTimerRunning && timer > 0) {
-         interval = setInterval(() => {
-           setTimer((prev) => prev - 1)
-         }, 1000)
-       } else if (timer === 0) {
-         handleNext()
-       }
-       return () => clearInterval(interval)
-     }, [timer, isTimerRunning])
+  // State management
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedOptions, setSelectedOptions] = useState({});
+  const [timer, setTimer] = useState(60);
+  const [isTimerRunning, setIsTimerRunning] = useState(true);
 
-// Save progress whenever selectedOptions changes
-useEffect(() => {
-  const progress = {
-    subject,
-    difficulty,
-    currentIndex,
-    selectedOptions,
-    timestamp: Date.now(),
-  };
-  localStorage.setItem('quizProgress', JSON.stringify(progress));
-}, [selectedOptions, currentIndex, subject, difficulty]);
+  // Routing
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { subject, difficulty } = location.state || {};
 
-// Load saved progress on mount
-useEffect(() => {
-  const saved = localStorage.getItem('quizProgress');
-  if (saved) {
-    const { subject: savedSubject, difficulty: savedDiff, currentIndex: savedIndex, selectedOptions: savedOpts } = JSON.parse(saved);
-    if (savedSubject === subject && savedDiff === difficulty) {
-      setCurrentIndex(savedIndex);
-      setSelectedOptions(savedOpts);
+  // Data loading
+  const subjectData = questionsData.find((sub) => sub.name === subject);
+
+  // Navigation guard
+  useEffect(() => {
+    if (!subject || !difficulty) {
+      navigate('/');
     }
-  }
-}, [subject, difficulty]);
-     
-     // ✅ Only AFTER hooks, include conditional return
-     if (!subjectData || !subjectData.difficulties[difficulty]) {
-       return <div>Error: Invalid subject or difficulty selected.</div>
-     }
-     
-     // 🧠 Do this after the return check
-     const questions = subjectData.difficulties[difficulty].questions
-  
+  }, [subject, difficulty, navigate]);
 
-  const handleOptionSelect = (questionIndex, option) => {
-    setSelectedOptions({
-      ...selectedOptions,
-      [questionIndex]: option
-    })
-  }
-const handleNext = useCallback(() => {
-  setIsTimerRunning(false);
-  const timeoutId = setTimeout(() => {
-    if (currentIndex < questions.length - 1) {
-      setCurrentIndex((prev) => prev + 1); // Functional update
-      setTimer(60);
-      setIsTimerRunning(true);
-    } else {
-      if (window.confirm("Submit your quiz?")) {
-        navigate('/results', { state: { subject, difficulty, selectedOptions } });
+  // Memoized navigation handlers
+  const handleNext = useCallback(() => {
+    setIsTimerRunning(false);
+    const timeoutId = setTimeout(() => {
+      if (currentIndex < questions.length - 1) {
+        setCurrentIndex((prev) => prev + 1);
+        setTimer(60);
+        setIsTimerRunning(true);
       } else {
+        if (window.confirm("Submit your quiz? You can't change answers after.")) {
+          navigate('/results', { state: { subject, difficulty, selectedOptions } });
+        } else {
+          setIsTimerRunning(true);
+        }
+      }
+    }, 300);
+    return () => clearTimeout(timeoutId);
+  }, [currentIndex, questions?.length, navigate, subject, difficulty, selectedOptions]);
+
+  const handlePrevious = useCallback(() => {
+    setIsTimerRunning(false);
+    const timeoutId = setTimeout(() => {
+      if (currentIndex > 0) {
+        setCurrentIndex(currentIndex - 1);
+        setTimer(60);
         setIsTimerRunning(true);
       }
+    }, 300);
+    return () => clearTimeout(timeoutId);
+  }, [currentIndex]);
+
+  // Timer logic
+  useEffect(() => {
+    let interval;
+    if (isTimerRunning && timer > 0) {
+      interval = setInterval(() => setTimer((prev) => prev - 1), 1000);
+    } else if (timer === 0) {
+      handleNext();
     }
-  }, 300);
+    return () => clearInterval(interval);
+  }, [timer, isTimerRunning, handleNext]);
 
-  return () => clearTimeout(timeoutId);
-}, [currentIndex, questions.length, navigate, subject, difficulty, selectedOptions]);
-
-// Timer useEffect (now includes handleNext)
-useEffect(() => {
-  let interval;
-  if (isTimerRunning && timer > 0) {
-    interval = setInterval(() => setTimer((prev) => prev - 1), 1000);
-  } else if (timer === 0) {
-    handleNext();
-  }
-  return () => clearInterval(interval);
-}, [timer, isTimerRunning, handleNext]);
-
-// Debounced localStorage save
-useEffect(() => {
-  const debounceTimer = setTimeout(() => {
-    try {
-      localStorage.setItem('quizProgress', JSON.stringify({
-        subject,
-        difficulty,
-        currentIndex,
-        selectedOptions,
-        timestamp: Date.now(),
-      }));
-    } catch (e) {
-      console.error("Failed to save progress:", e);
-    }
-  }, 500);
-
-  return () => clearTimeout(debounceTimer);
-}, [selectedOptions, currentIndex, subject, difficulty]);
-  const handlePrevious = () => {
-    setIsTimerRunning(false)
-    setTimeout(() => {
-      if (currentIndex > 0) {
-        setCurrentIndex(currentIndex - 1)
-        setTimer(60)
-        setIsTimerRunning(true)
+  // Progress persistence
+  useEffect(() => {
+    const debounceTimer = setTimeout(() => {
+      try {
+        localStorage.setItem('quizProgress', JSON.stringify({
+          subject,
+          difficulty,
+          currentIndex,
+          selectedOptions,
+          timestamp: Date.now(),
+        }));
+      } catch (e) {
+        console.error("Failed to save progress:", e);
       }
-    }, 300)
+    }, 500);
+    return () => clearTimeout(debounceTimer);
+  }, [selectedOptions, currentIndex, subject, difficulty]);
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('quizProgress');
+      if (saved) {
+        const { 
+          subject: savedSubject, 
+          difficulty: savedDiff, 
+          currentIndex: savedIndex, 
+          selectedOptions: savedOpts 
+        } = JSON.parse(saved);
+        
+        if (savedSubject === subject && savedDiff === difficulty) {
+          setCurrentIndex(savedIndex);
+          setSelectedOptions(savedOpts);
+        }
+      }
+    } catch (e) {
+      console.error("Failed to load progress:", e);
+    }
+  }, [subject, difficulty]);
+
+  // Early return if invalid data
+  if (!subjectData || !subjectData.difficulties[difficulty]) {
+    return <div className="p-4 text-red-500">Error: Invalid subject or difficulty selected.</div>;
   }
+
+  const questions = subjectData.difficulties[difficulty].questions;
+
+  // Option selection handler
+  const handleOptionSelect = (questionIndex, option) => {
+    setSelectedOptions(prev => ({
+      ...prev,
+      [questionIndex]: option
+    }));
+  };
 
   return (
     <>
@@ -150,14 +137,14 @@ useEffect(() => {
               Question {currentIndex + 1} of {questions.length}
             </div>
           </div>
-          
+
           <ProgressBar 
             current={currentIndex + 1} 
             total={questions.length} 
             timer={timer} 
             maxTime={60} 
           />
-          
+
           <AnimatePresence mode='wait'>
             <motion.div
               key={currentIndex}
@@ -174,7 +161,7 @@ useEffect(() => {
               />
             </motion.div>
           </AnimatePresence>
-          
+
           <div className="flex justify-between mt-8">
             <motion.button
               onClick={handlePrevious}
@@ -189,7 +176,7 @@ useEffect(() => {
             >
               Previous
             </motion.button>
-            
+
             <motion.button
               onClick={handleNext}
               className="px-6 py-2 bg-indigo-600 rounded-lg font-medium hover:bg-indigo-700"
@@ -202,7 +189,7 @@ useEffect(() => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Quiz
+export default Quiz;
