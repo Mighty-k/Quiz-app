@@ -20,13 +20,8 @@ const Quiz = () => {
 
   // Data loading
   const subjectData = questionsData.find((sub) => sub.name === subject);
-
-  // Navigation guard
-  useEffect(() => {
-    if (!subject || !difficulty) {
-      navigate('/');
-    }
-  }, [subject, difficulty, navigate]);
+  const isInvalid = !subjectData || !subjectData.difficulties[difficulty];
+  const questions = !isInvalid ? subjectData.difficulties[difficulty].questions : [];
 
   // Memoized navigation handlers
   const handleNext = useCallback(() => {
@@ -45,7 +40,7 @@ const Quiz = () => {
       }
     }, 300);
     return () => clearTimeout(timeoutId);
-  }, [currentIndex, questions?.length, navigate, subject, difficulty, selectedOptions]);
+  }, [currentIndex, questions.length, navigate, subject, difficulty, selectedOptions]);
 
   const handlePrevious = useCallback(() => {
     setIsTimerRunning(false);
@@ -109,13 +104,6 @@ const Quiz = () => {
     }
   }, [subject, difficulty]);
 
-  // Early return if invalid data
-  if (!subjectData || !subjectData.difficulties[difficulty]) {
-    return <div className="p-4 text-red-500">Error: Invalid subject or difficulty selected.</div>;
-  }
-
-  const questions = subjectData.difficulties[difficulty].questions;
-
   // Option selection handler
   const handleOptionSelect = (questionIndex, option) => {
     setSelectedOptions(prev => ({
@@ -123,6 +111,10 @@ const Quiz = () => {
       [questionIndex]: option
     }));
   };
+
+  if (isInvalid) {
+    return <div className="p-4 text-red-500">Error: Invalid subject or difficulty selected.</div>;
+  }
 
   return (
     <>
