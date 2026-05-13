@@ -1,2 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
 @import "tailwindcss";
+
+:root {
+  --accent: #f97316;
+  --accent-hover: #ea580c;
+  --success: #22c55e;
+  --error: #ef4444;
+  --warning: #eab308;
+}
+
+body {
+  font-family: "DM Sans", system-ui, sans-serif;
+}

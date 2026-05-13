@@ -1,40 +1,30 @@
-import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { FaBrain } from 'react-icons/fa'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="fixed w-full z-50 bg-gray-900/80 backdrop-blur-md py-4 shadow-lg"
-    >
-      <div className="container mx-auto px-6 flex justify-between items-center">
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          className="flex items-center space-x-2"
-        >
-          <FaBrain className="text-indigo-500 text-2xl" />
-          <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
-            QuizMe
-          </Link>
-        </motion.div>
-        
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <Link 
-            to="/" 
-            className="px-4 py-2 bg-indigo-600 rounded-lg font-medium hover:bg-indigo-700 transition-colors"
+    <header className="fixed top-0 left-0 right-0 z-40 border-b border-white/10 bg-gray-950/80 backdrop-blur-md">
+      <div className="container mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <Link to="/" className="text-xl font-bold tracking-wide text-white">
+          QuizMe
+        </Link>
+
+        <div className="flex items-center gap-3 text-sm">
+          <Link
+            to="/"
+            className="rounded-lg border border-white/10 px-4 py-2 text-gray-200 transition-colors hover:bg-white/10"
           >
             Home
           </Link>
-        </motion.div>
+          <Link
+            to="/"
+            className="rounded-lg bg-indigo-600 px-4 py-2 font-medium text-white transition-colors hover:bg-indigo-500"
+          >
+            Start Quiz
+          </Link>
+        </div>
       </div>
-    </motion.nav>
-  )
-}
+    </header>
+  );
+};
 
-export default Navbar
+export default Navbar;
